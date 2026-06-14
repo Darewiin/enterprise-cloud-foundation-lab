@@ -1,0 +1,16 @@
+# terraform.tfvars.example
+# Copy this to terraform.tfvars to override defaults for your environment.
+# terraform.tfvars is gitignored (it can hold environment-specific values),
+# so this .example file is the safe template you commit instead.
+
+location   = "eastus"
+org_prefix = "northgate"
+
+allowed_locations = ["eastus", "eastus2"]
+
+common_tags = {
+  environment = "lab"
+  project     = "enterprise-cloud-foundation"
+  owner       = "Your Name"
+  managed_by  = "Terraform"
+}
